@@ -54,7 +54,7 @@ cat largefile.json | jsonkeys
 # Notes
 
 + Does not delve into arrays.
-+ Does not cope with ndjson or nl json.
++ Does not cope with ndjson/nljson.
 
 # Status
 
