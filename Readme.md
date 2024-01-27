@@ -38,7 +38,7 @@ Note that we don't delve into arrays. If somehow your usage matches this is the 
 To install this you'll need go, if you have this checked out you should be able to use go build, but otherwise:
 
 ```
-go install github.com/draxil/jsonkeys
+go install github.com/draxil/jsonkeys@latest
 ```
 
 You may need to add go's bin file to your path, see general instructions on this! If this gets some interest I'll add builds.
