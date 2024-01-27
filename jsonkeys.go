@@ -19,7 +19,7 @@ func main() {
 
 			err = produceKeys(f, outputKey)
 			if err != nil {
-				err = fmt.Errorf("processing %s: %w", err)
+				err = fmt.Errorf("processing %s: %w", fn, err)
 			}
 		}
 	}
