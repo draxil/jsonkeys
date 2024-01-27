@@ -1,9 +1,6 @@
 # jsonkeys
 
-
-Basically a thing I've knocked together to answer a query on [json2nd](https://github.com/draxil/json2nd)! 
-
-But, do you for some reason need a list of all the nested keys in a very large (so hard to jq) JSON file? 
+Do you for some reason need a list of all the nested keys in a very large (so hard to jq) JSON file? 
 
 So for:
 
@@ -53,3 +50,14 @@ Or
 ```
 cat largefile.json | jsonkeys
 ```
+
+# Notes
+
++ Does not delve into arrays.
++ Does not cope with ndjson or nl json.
+
+# Status
+
+
+Basically a thing I've knocked together to answer a query on [json2nd](https://github.com/draxil/json2nd)! I actually now find it a bit handy when looking at a new JSON file I don't know. Like json2nd it should not choke on large files, although the implmentation here is a bit more go standard library. I may expand this if anyone cares, so let me know if it's useful.
+
