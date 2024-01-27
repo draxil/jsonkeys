@@ -27,3 +27,15 @@ func TestProduceKeys(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Equal(t, []string{"a", "b", "c", "d", "d.e", "d.f"}, results)
 }
+
+func TestProduceKeysNDJson(t *testing.T) {
+	r := strings.NewReader(`{"a":1}
+{"b":2}
+`)
+	results := []string{}
+	err := produceKeys(r, func(key string) {
+		results = append(results, key)
+	})
+	assert.Equal(t, ErrNotTheEnd, err)
+	assert.Equal(t, []string{"a"}, results)
+}
