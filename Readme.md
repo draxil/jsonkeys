@@ -28,7 +28,7 @@ d.e
 d.f
 ```
 
-Note that we don't delve into arrays. If somehow your usage matches this is the place!
+Note that we don't delve into arrays. If somehow your usage matches: this is the place!
 
 # Compiling / usage
 
