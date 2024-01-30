@@ -61,3 +61,10 @@ cat largefile.json | jsonkeys
 
 Basically a thing I've knocked together to answer a query on [json2nd](https://github.com/draxil/json2nd)! I actually now find it a bit handy when looking at a new JSON file I don't know. Like json2nd it should not choke on large files, although the implmentation here is a bit more go standard library. I may expand this if anyone cares, so let me know if it's useful.
 
+Possible future:
+
+1. Use the JSON scanner logic from json2nd to make it fast.
+2. Depth options.
+
+More or less likely depending on who cares, so if you have use of this please let me know.
+
